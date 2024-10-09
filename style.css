@@ -1,0 +1,132 @@
+/* General styles for the app */
+body {
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+}
+
+p, ul {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+}
+
+div.stTextInput {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;  /* Light gray border */
+    font-size: 16px;
+    color: #333333;
+}
+
+div.stTextArea {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;  /* Light gray border */
+    font-size: 16px;
+    color: #333333;
+}
+
+/* Style for all text inputs */
+.stTextInput > div > input {
+    padding: 12px !important; /* Add padding */
+    background-color: #ffffff !important; /* White background for clarity */
+    border: 1px solid #e0e0e0 !important; /* Light gray border */
+    border-radius: 4px !important; /* Slightly rounded corners */
+    font-size: 14px !important; /* Slightly smaller font size for inputs */
+    color: #333333 !important; /* Dark text for readability */
+    width: 100% !important; /* Full width */
+    box-sizing: border-box !important; /* Include padding and border in width */
+    transition: border 0.3s, box-shadow 0.3s; /* Smooth transition for focus */
+}
+
+/* On focus, change border and add shadow */
+.stTextInput > div > input:focus {
+    border: 1px solid #3f51b5 !important; /* Deep blue border on focus */
+    box-shadow: 0 0 5px rgba(63, 81, 181, 0.3) !important; /* Soft blue shadow */
+}
+
+/* Style for text areas */
+.stTextArea > div > textarea {
+    padding: 12px !important; /* Add padding */
+    background-color: #ffffff !important; /* White background */
+    border: 1px solid #e0e0e0 !important; /* Light gray border */
+    border-radius: 4px !important; /* Slightly rounded corners */
+    font-size: 14px !important; /* Slightly smaller font size for text areas */
+    color: #333333 !important; /* Dark text for readability */
+    width: 100% !important; /* Full width */
+    box-sizing: border-box !important; /* Include padding and border in width */
+    transition: border 0.3s, box-shadow 0.3s; /* Smooth transition for focus */
+}
+
+/* On focus for text area */
+.stTextArea > div > textarea:focus {
+    border: 1px solid #3f51b5 !important; /* Deep blue border on focus */
+    box-shadow: 0 0 5px rgba(63, 81, 181, 0.3) !important; /* Soft blue shadow */
+}
+
+/* Style for buttons */
+.stButton {
+    padding: 12px !important; /* Add padding */
+    background-color: gray !important; /* Deep blue background */
+    color: gray !important; /* White text */
+    border: none !important; /* No border */
+    border-radius: 4px !important; /* Slightly rounded corners */
+    cursor: pointer !important; /* Pointer on hover */
+    width: 100% !important; /* Full width */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+
+}
+
+/* On hover for buttons */
+.stButton:hover {
+    background-color: black !important; /* Darker blue on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important; /* Light shadow on hover */
+}
+
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section.stAppViewMain.main.st-emotion-cache-bm2z3a.ea3mdgi8 > div.stAppViewBlockContainer.block-container.st-emotion-cache-13ln4jf.ea3mdgi5 > div > div > div > div:nth-child(6) > div > button {
+            background-color: #4CAF50; /* Green background */
+            border: none; /* Remove borders */
+            color: white; /* White text */
+            padding: 10px 20px; /* Padding */
+            text-align: center; /* Center text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Keep inline */
+            font-size: 16px; /* Font size */
+            margin: 4px 2px; /* Margins */
+            cursor: pointer; /* Pointer/hand icon on hover */
+            border-radius: 12px; /* Rounded corners */
+            transition-duration: 0.4s; /* Smooth transition */
+}
+
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section.stAppViewMain.main.st-emotion-cache-bm2z3a.ea3mdgi8 > div.stAppViewBlockContainer.block-container.st-emotion-cache-13ln4jf.ea3mdgi5 > div > div > div > div:nth-child(6) > div > button:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+}
+
+
+
+/* Style for select box in sidebar */
+.stSelectbox > div > select {
+    padding: 12px !important; /* Add padding */
+    background-color: #ffffff !important; /* White background */
+    border: 1px solid #e0e0e0 !important; /* Light gray border */
+    border-radius: 4px !important; /* Slightly rounded corners */
+    font-size: 14px !important; /* Standard font size */
+    color: #333333 !important; /* Dark text for readability */
+    width: 100% !important; /* Full width */
+    box-sizing: border-box !important; /* Include padding and border in width */
+}
+
+/* On focus for select box */
+.stSelectbox > div > select:focus {
+    border: 1px solid #3f51b5 !important; /* Deep blue border on focus */
+    box-shadow: 0 0 5px rgba(63, 81, 181, 0.3) !important; /* Soft blue shadow */
+}
+
+/* Style for sidebar */
+.sidebar .sidebar-content {
+    background-color: #f9f9f9; /* Light gray background for sidebar */
+    border-right: 1px solid #e0e0e0; /* Light gray border on the right */
+    padding: 15px; /* Padding for the sidebar content */
+}
