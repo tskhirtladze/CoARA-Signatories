@@ -2,6 +2,28 @@ import requests
 import pandas as pd
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin  # To handle relative URLs
+import datetime
+
+# Function to store the current date in a file (clean and write)
+def store_current_date(file_name):
+    current_date = datetime.date.today().isoformat()
+    with open(file_name, 'w') as file:  # Open in write mode to clean the file
+        file.write(current_date + "\n")
+
+
+# Function to read the stored date from the file
+def read_stored_date(file_name):
+    try:
+        with open(file_name, 'r') as file:
+            return file.read().strip()  # Read the only date present in the file
+    except FileNotFoundError:
+        return "No update available yet."
+
+
+# File where the date will be stored
+file_name = 'last_update.txt'
+
+
 
 
 def fetch_signatories_data(url="https://coara.eu/agreement/signatories/"):
@@ -104,6 +126,8 @@ def fetch_signatories_data(url="https://coara.eu/agreement/signatories/"):
 
         # Create a dataframe from the flattened data
         my_df = pd.DataFrame(rows, columns=['Country', 'Organization'])
+
+        store_current_date(file_name)
 
         return my_df
     except:

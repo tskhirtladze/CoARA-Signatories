@@ -4,7 +4,7 @@ import plotly.express as px
 import geopandas as gpd
 import matplotlib.pyplot as plt
 import datetime
-from scraping_coara import fetch_signatories_data, save_to_csv
+from scraping_coara import fetch_signatories_data, save_to_csv, read_stored_date, file_name
 import os
 
 
@@ -41,9 +41,7 @@ if 'selected_nav' not in st.session_state:
     st.session_state['selected_nav'] = "📖 About"  # Default to "📖 About"
 if 'coara_data' not in st.session_state:
     st.session_state['coara_data'] = "Clear Selection"  # Default to "Clear Selection"
-# ------------------------
-if 'last_updated' not in st.session_state:
-    st.session_state['last_updated'] = f"**2024-10-09**"
+
 
 
 # Function to clear the selected navigation when coara_data is chosen
@@ -102,7 +100,9 @@ elif selected_nav == "📊 Insights" and coara_data == "Clear Selection":
     # Distribution of Universities by Country
     st.subheader('Insights')
 
-    st.write(f"Last updated: **{st.session_state['last_updated']}**")
+    last_update_date = read_stored_date(file_name)
+
+    st.write(f"Last updated: **{last_update_date}**")
 
     country_count = df_filtered['Country'].value_counts()
     st.write("This section features a bar chart that shows the number of CoARA signatories for each country. You can select countries to display in the bar chart for comparison.")
