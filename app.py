@@ -272,37 +272,87 @@ elif selected_nav == "📊 Insights" and coara_data == "Clear Selection":
         st.plotly_chart(choropleth)
 
 
+    # st.write("")
+    # st.write("")
+    #
+    #
+    # st.subheader("Post-Soviet Countries")
+    #
+    # post_soviet_countries = ["Armenia", "Azerbaijan", "Belarus", "Estonia", "Georgia", "Kazakhstan", "Kyrgyzstan",
+    #                          "Latvia", "Lithuania", "Moldova", "Russia", "Tajikistan", "Turkmenistan", "Ukraine",
+    #                          "Uzbekistan"]
+    # # Filter the DataFrame to keep only valid countries
+    # post_soviet_df = coara_df[coara_df['Country'].isin(post_soviet_countries)]
+    #
+    # # Group by country and count organizations
+    # post_soviet_countries_count = post_soviet_df['Country'].value_counts()
+    # post_soviet_countries_fig = px.bar(
+    #     post_soviet_df,
+    #     x=post_soviet_countries_count.index,
+    #     y=post_soviet_countries_count.values,
+    #     labels={'index': 'Country', 'y': 'Number of Signatories'},
+    #     title='Number of Signatories From Post-Soviet Countries',
+    #     text=post_soviet_countries_count.values
+    # )
+    # post_soviet_countries_fig.update_traces(texttemplate='%{text}', textposition='outside')
+    # post_soviet_countries_fig.update_layout(yaxis=dict(tickvals=[]))
+    # post_soviet_countries_fig.update_layout(xaxis=dict(tickangle=270))
+    # post_soviet_countries_fig.update_layout(xaxis_title="Countries")
+    #
+    # post_soviet_countries_fig.update_layout(
+    #     title={
+    #         'text': 'Number of Signatories From Post-Soviet Countries',
+    #         'font': {'size': 22}  # Set title font size
+    #     },
+    #     xaxis_title={
+    #         'text': "Countries",
+    #         'font': {'size': 16}
+    #     },
+    #     yaxis_title={
+    #         'text': "Number of Signatories",
+    #         'font': {'size': 16}
+    #     },
+    #     font=dict(size=12),  # Set axis font size
+    #     xaxis=dict(tickangle=270),
+    #     yaxis=dict(tickvals=[])
+    # )
+    #
+    # st.plotly_chart(post_soviet_countries_fig)
+
+
+    # EU Widening Countries
+
     st.write("")
     st.write("")
 
+    st.subheader("EU Widening Countries")
 
-    st.subheader("Post-Soviet Countries")
-
-    post_soviet_countries = ["Armenia", "Azerbaijan", "Belarus", "Estonia", "Georgia", "Kazakhstan", "Kyrgyzstan",
-                             "Latvia", "Lithuania", "Moldova", "Russia", "Tajikistan", "Turkmenistan", "Ukraine",
-                             "Uzbekistan"]
+    eu_widening_countries = ["Bulgaria", "Croatia", "Cyprus", "Czechia", "Estonia", "Greece", "Hungary",
+                             "Latvia", "Lithuania", "Malta", "Poland", "Portugal", "Romania", "Slovakia",
+                             "Slovenia", "Albania", "Bosnia and Herzegovina", "Georgia", "Kosovo", "Montenegro",
+                             "North Macedonia", "Serbia", "Moldova", "Ukraine"]
     # Filter the DataFrame to keep only valid countries
-    post_soviet_df = coara_df[coara_df['Country'].isin(post_soviet_countries)]
+    eu_widening_countries_df = coara_df[coara_df['Country'].isin(eu_widening_countries)]
 
     # Group by country and count organizations
-    post_soviet_countries_count = post_soviet_df['Country'].value_counts()
-    post_soviet_countries_fig = px.bar(
-        post_soviet_df,
-        x=post_soviet_countries_count.index,
-        y=post_soviet_countries_count.values,
+    eu_widening_countries_count = eu_widening_countries_df['Country'].value_counts()
+    eu_widening_countries_fig = px.bar(
+        eu_widening_countries_df,
+        x=eu_widening_countries_count.index,
+        y=eu_widening_countries_count.values,
         labels={'index': 'Country', 'y': 'Number of Signatories'},
-        title='Number of Signatories From Post-Soviet Countries',
-        text=post_soviet_countries_count.values
+        # title='Number of Signatories From EU Widening Countries',
+        text=eu_widening_countries_count.values
     )
-    post_soviet_countries_fig.update_traces(texttemplate='%{text}', textposition='outside')
-    post_soviet_countries_fig.update_layout(yaxis=dict(tickvals=[]))
-    post_soviet_countries_fig.update_layout(xaxis=dict(tickangle=270))
-    post_soviet_countries_fig.update_layout(xaxis_title="Countries")
+    eu_widening_countries_fig.update_traces(texttemplate='%{text}', textposition='outside')
+    eu_widening_countries_fig.update_layout(yaxis=dict(tickvals=[]))
+    eu_widening_countries_fig.update_layout(xaxis=dict(tickangle=270))
+    eu_widening_countries_fig.update_layout(xaxis_title="Countries")
 
-    post_soviet_countries_fig.update_layout(
+    eu_widening_countries_fig.update_layout(
         title={
-            'text': 'Number of Signatories From Post-Soviet Countries',
-            'font': {'size': 22}  # Set title font size
+            'text': 'Number of Signatories From EU Widening Countries',
+            'font': {'size': 18}  # Set title font size
         },
         xaxis_title={
             'text': "Countries",
@@ -317,7 +367,7 @@ elif selected_nav == "📊 Insights" and coara_data == "Clear Selection":
         yaxis=dict(tickvals=[])
     )
 
-    st.plotly_chart(post_soviet_countries_fig)
+    st.plotly_chart(eu_widening_countries_fig)
 
 
 
