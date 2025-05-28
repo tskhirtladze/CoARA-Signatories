@@ -12,15 +12,16 @@ import os
 coara_df = pd.read_csv("coara_signatories.csv")
 
 # Load world map from a local shapefile
-# Make sure to replace 'path_to_your_shapefile/ne_110m_admin_0_countries.shp' with your actual file path
+# Make sure to replace 'path_to_your_shapefile/ne_50m_admin_0_countries.shp' with your actual file path
 # Construct the path to the shapefile
-shapefile_path = os.path.join(os.getcwd(), "earth", "ne_110m_admin_0_countries.shp")
+shapefile_path = os.path.join(os.getcwd(), "earth", "ne_50m_admin_0_countries.shp")
 world = gpd.read_file(shapefile_path)
 
 # Get a list of valid country names + 'Timor-Leste', because in the dataset 'East Timor' is mentioned as 'Timor-Leste'
-valid_countries = world['ADMIN'].tolist()
+valid_countries = world['NAME'].tolist()
 
 coara_df['Country'] = coara_df['Country'].replace('Timor-Leste', 'East Timor')
+coara_df['Country'] = coara_df['Country'].replace('The Netherlands', 'Netherlands')
 
 # Filter the DataFrame to keep only valid countries
 df_filtered = coara_df[coara_df['Country'].isin(valid_countries)]
