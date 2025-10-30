@@ -1,4 +1,9 @@
 Country,Organization
+"Academies, learned societies, and their associations, and associations of researchers",AMASES (Association for Mathematics Applied to Social and Economic Sciences)
+"Academies, learned societies, and their associations, and associations of researchers",Academy of Economic Studies of Moldova
+"Academies, learned societies, and their associations, and associations of researchers",Irish Research Staff Association
+"Academies, learned societies, and their associations, and associations of researchers",Turkish Academy of Sciences
+"Academies, learned societies, and their associations, and associations of researchers",Society of Spanish Researchers in the United Kingdom (SRUK/CERU)
 "Academies, learned societies, and their associations, and associations of researchers","Italian Academy of Business Administration, Organization and Management"
 "Academies, learned societies, and their associations, and associations of researchers",European Geosciences Union
 "Academies, learned societies, and their associations, and associations of researchers",Lithuanian Society for Infectious Diseases
@@ -67,6 +72,7 @@ Andorra,Quality Assurance Agency in Higher Education of Andorra
 Andorra,University of Andorra
 Australia,National Health and Medical Research Council
 Australia,Curtin Open Knowledge Initiative
+Austria,Sigmund Freud Private University
 Austria,JOANNEUM RESEARCH
 Austria,Austrian Agency for Research Integrity
 Austria,BOKU University
@@ -82,6 +88,7 @@ Austria,St. Pölten University of Applied Sciences
 Austria,University of Applied Sciences Kufstein Tirol
 Austria,FWF Austrian Science Fund
 Austria,ÖPUK Oesterreichische Privatuniversitätenkonferenz
+Belgium,Sciensano
 Belgium,UCLouvain
 Belgium,Consortium of European Taxonomic Facilities
 Belgium,University of Namur
@@ -109,6 +116,49 @@ Chile,Universidad Autonoma de Chile
 Chile,National Research and Development Agency
 Costa Rica,"National University, Costa Rica"
 Costa Rica,University of Costa Rica
+Country/scope,Jönköping University
+Country/scope,Muséum national d'Histoire naturelle
+Country/scope,The University of Manchester
+Country/scope,AMASES (Association for Mathematics Applied to Social and Economic Sciences)
+Country/scope,Academy of Economic Studies of Moldova
+Country/scope,University of Political and Economic European Studies C. Stere
+Country/scope,"Research-Development Institute for Plant Protection, Bucharest"
+Country/scope,John Innes Centre
+Country/scope,University of Liechtenstein
+Country/scope,European University for Well-Being
+Country/scope,University of Bristol
+Country/scope,Sciensano
+Country/scope,Obuda University
+Country/scope,University of Orléans
+Country/scope,Latvia University of Life Sciences and Technologies
+Country/scope,Irish Research Staff Association
+Country/scope,European University Cyprus
+Country/scope,Helmholtz Open Science Office
+Country/scope,Center For Ethics In Science And Journalism
+Country/scope,Institut de Recerca Sant Pau - IR Sant Pau
+Country/scope,University Alliance Ruhr
+Country/scope,University of Education Heidelberg
+Country/scope,Fundacion Jimenez Diaz Health Research Institute
+Country/scope,Universidad Miguel Hernández de Elche
+Country/scope,CY Cergy Paris Université
+Country/scope,Turkish Academy of Sciences
+Country/scope,Politehnica University Timisoara
+Country/scope,Vilnius Gediminas Technical University
+Country/scope,Tomas Bata University in Zlin
+Country/scope,University of Primorska
+Country/scope,National University of Kyiv Mohyla Academy
+Country/scope,Institut Pasteur
+Country/scope,Society of Spanish Researchers in the United Kingdom (SRUK/CERU)
+Country/scope,University College Absalon
+Country/scope,Vidzeme University of Applied Sciences
+Country/scope,Jean Monnet University
+Country/scope,Alte University
+Country/scope,INESC INOV-Lab (INESC INOV - Research & Development Laboratory)
+Country/scope,Sigmund Freud Private University
+Country/scope,Netherlands Federation of University Medical Centres (NFU)
+Country/scope,European Institute of Education and Social Policy
+Country/scope,Zurich University of the Arts
+Country/scope,University of Suffolk
 Country/scope,National Health and Medical Research Council
 Country/scope,Brunel University London
 Country/scope,Alexander von Humboldt Foundation
@@ -155,7 +205,6 @@ Country/scope,Roskilde University
 Country/scope,University of Monterrey
 Country/scope,St. Ignatius of Loyola College
 Country/scope,Brazilian Reproducibility Network
-Country/scope,Sigmund Freud University SFU Berlin
 Country/scope,Vasyl Stefanyk Precarpathian National University
 Country/scope,Lithuanian Centre for Social Sciences
 Country/scope,Blekinge Institute of Technology
@@ -902,8 +951,10 @@ Country/scope,The Royal Netherlands Academy of Arts and Sciences
 Country/scope,Charles University
 Country/scope,Utrecht University
 Croatia,University of Rijeka
+Cyprus,European University Cyprus
 Cyprus,University of Cyprus
 Cyprus,European Office of Cyprus
+Czechia,Tomas Bata University in Zlin
 Czechia,"Research, Development and Innovation Council"
 Czechia,University of South Bohemia in České Budějovice
 Czechia,Global Change Research Institute CAS
@@ -918,6 +969,7 @@ Czechia,University of Chemistry and Technology Prague
 Czechia,J. Heyrovsky Institute of Physical Chemistry of the Czech Academy of Sciences
 Czechia,Czech Science Foundation
 Czechia,Charles University
+Denmark,University College Absalon
 Denmark,Roskilde University
 Denmark,VELUX FONDEN
 Denmark,Villum Foundation
@@ -932,8 +984,10 @@ Denmark,Independent Research Fund Denmark
 Denmark,The Danish National Research Foundation
 Estonia,The Estonian Young Academy of Sciences
 Estonia,Estonian Research Council
+Europe,European University for Well-Being
+Europe,National University of Kyiv Mohyla Academy
+Europe,European Institute of Education and Social Policy
 Europe,ORPHEUS- Quality in Doctoral Education
-Europe,Sigmund Freud University SFU Berlin
 Europe,ASTP Proton
 Europe,EUTOPIA
 Europe,European Society for Anesthesiology and Intensive cAre
@@ -1023,6 +1077,11 @@ Finland,Aalto University
 Finland,Tampere University
 Finland,Federation of Finnish Learned Societies
 Finland,University of Turku
+France,Muséum national d'Histoire naturelle
+France,University of Orléans
+France,CY Cergy Paris Université
+France,Institut Pasteur
+France,Jean Monnet University
 France,University of Caen Normandy
 France,Ecole Normale Supérieure de Lyon
 France,INALCO - National Institute of Oriental Languages and Civilizations
@@ -1080,11 +1139,15 @@ France,Université de Strasbourg
 France,ANR (French National Research Agency)
 France,CNRS
 France,Haut Conseil de l'évaluation de la recherche et de l'enseignement supérieur
+Georgia,Alte University
 Georgia,Avicenna - Batumi Medical University
 Georgia,Ilis State University
 Georgia,David Tvildiani Medical University
 Georgia,Petre Shotadze Tbilisi Medical Academy
 Georgia,Shota Rustaveli National Science Foundation
+Germany,Helmholtz Open Science Office
+Germany,University Alliance Ruhr
+Germany,University of Education Heidelberg
 Germany,Alexander von Humboldt Foundation
 Germany,German Society of Sport Science
 Germany,Leibniz Institute for Psychology (ZPID)
@@ -1147,6 +1210,7 @@ Global,Global Young Academy
 Global,The Framework for Open and Reproducible Research Training (FORRT)
 Greece,Athena Research & Innovation Center in Information Communication & Knowledge Technologies
 Greece,National and Kapodistrian University of Athens (NKUA)
+Hungary,Obuda University
 Hungary,University of Pannonia
 Hungary,University of Pécs
 Hungary,Hungarian Young Academy
@@ -1163,6 +1227,7 @@ Hungary,"Országos Rabbiképzó – Zsidó Egyetem [Jewish Theological Seminary 
 Hungary,Eötvös Loránd University
 Iceland,University of Iceland
 Iceland,Icelandic Centre for Research
+Ireland,Irish Research Staff Association
 Ireland,Mary Immaculate College
 Ireland,Irish Research Council
 Ireland,Dublin City University
@@ -1176,6 +1241,8 @@ Ireland,University of Galway
 Ireland,University College Dublin
 Ireland,University of Limerick
 Ireland,Health Research Board
+Italy,AMASES (Association for Mathematics Applied to Social and Economic Sciences)
+Italy,Center For Ethics In Science And Journalism
 Italy,"Italian Academy of Business Administration, Organization and Management"
 Italy,Politecnico di Milano
 Italy,Fondazione IRCCS Policlinico San Matteo di Pavia
@@ -1248,9 +1315,13 @@ Italy,TOUR4EU Tuscan Organisation of Universities in Europe
 Italy,"Centro di Ricerca, Sviluppo e Studi Superiori in Sardegna - CRS4"
 Kenya,Olkejuado Adult and Continuing Education Association
 Kosovo,University of Prishtina
+Latvia,Latvia University of Life Sciences and Technologies
+Latvia,Vidzeme University of Applied Sciences
 Latvia,Art Academy of Latvia
 Latvia,Latvian Council of Science
 Latvia,Higher Education Council of Latvia
+Liechtenstein,University of Liechtenstein
+Lithuania,Vilnius Gediminas Technical University
 Lithuania,Mykolas Romeris University
 Lithuania,Lithuanian Society for Infectious Diseases
 Lithuania,General Jonas Žemaitis Military Academy of Lithuania
@@ -1270,6 +1341,8 @@ Luxembourg,University of Luxembourg
 Luxembourg,Luxembourg National Research Fund
 Mexico,Institute of Evaluation and Advanced Engineering
 Mexico,University of Monterrey
+Moldova,Academy of Economic Studies of Moldova
+Moldova,University of Political and Economic European Studies C. Stere
 Moldova,Moldova Young Academy
 Moldova,Information Society Development Institute
 Moldova,Moldova State University
@@ -1298,6 +1371,7 @@ National/regional authorities or agencies that implement some form of research a
 National/regional authorities or agencies that implement some form of research assessment and their associations,Romanian Agency for Quality Assurance in Higher Education (ARACIS)
 National/regional authorities or agencies that implement some form of research assessment and their associations,Italian National Agency for the Evaluation of Universities and Research Institutes (ANVUR)
 National/regional authorities or agencies that implement some form of research assessment and their associations,Haut Conseil de l'évaluation de la recherche et de l'enseignement supérieur
+Netherlands,Netherlands Federation of University Medical Centres (NFU)
 Netherlands,Dutch Heart Foundation
 Netherlands,Saxion University of Applied Sciences
 Netherlands,Assistant Professor Network Netherlands
@@ -1353,6 +1427,7 @@ Norway,Norwegian School of Sport Sciences
 Norway,Østfold University College
 Norway,Universities Norway
 Norway,The Research Council of Norway
+"Other relevant non-for-profit organisations involved with research assessment, and their associations",European Institute of Education and Social Policy
 "Other relevant non-for-profit organisations involved with research assessment, and their associations",German Society of Sport Science
 "Other relevant non-for-profit organisations involved with research assessment, and their associations",ORPHEUS- Quality in Doctoral Education
 "Other relevant non-for-profit organisations involved with research assessment, and their associations",Index Foundation
@@ -1465,6 +1540,7 @@ Poland,Koszalin University of Technology
 Poland,University of Gdańsk
 Poland,Wroclaw University of Economics and Business
 Poland,The Polish Academy of Sciences
+Portugal,INESC INOV-Lab (INESC INOV - Research & Development Laboratory)
 Portugal,Institute for Systems Engineering and Computers at Coimbra - INESC Coimbra
 Portugal,University of Algarve
 Portugal,Universidade Aberta
@@ -1493,6 +1569,7 @@ Portugal,"INESC TEC – Institute for Systems and Computer Engineering, Technolo
 Portugal,Fundação para a Ciência e a Tecnologia
 Portugal,Universidade do Minho
 Portugal,Universidade de Trás-os-Montes e Alto Douro
+Public or private research funding organisations and their associations,Sciensano
 Public or private research funding organisations and their associations,National Health and Medical Research Council
 Public or private research funding organisations and their associations,Alexander von Humboldt Foundation
 Public or private research funding organisations and their associations,JOANNEUM RESEARCH
@@ -1547,6 +1624,15 @@ Public or private research funding organisations and their associations,"Executi
 Public or private research funding organisations and their associations,Nederlandse Organisatie voor Wetenschappelijk Onderzoek
 Public or private research funding organisations and their associations,Research Foundation Flanders - FWO
 Public or private research funding organisations and their associations,Deutsche Forschungsgemeinschaft (DFG) e.V.
+"Research centres, research infrastructures, and their associations","Research-Development Institute for Plant Protection, Bucharest"
+"Research centres, research infrastructures, and their associations",John Innes Centre
+"Research centres, research infrastructures, and their associations",Helmholtz Open Science Office
+"Research centres, research infrastructures, and their associations",Center For Ethics In Science And Journalism
+"Research centres, research infrastructures, and their associations",Institut de Recerca Sant Pau - IR Sant Pau
+"Research centres, research infrastructures, and their associations",Fundacion Jimenez Diaz Health Research Institute
+"Research centres, research infrastructures, and their associations",Institut Pasteur
+"Research centres, research infrastructures, and their associations",INESC INOV-Lab (INESC INOV - Research & Development Laboratory)
+"Research centres, research infrastructures, and their associations",Netherlands Federation of University Medical Centres (NFU)
 "Research centres, research infrastructures, and their associations",Institute for Systems Engineering and Computers at Coimbra - INESC Coimbra
 "Research centres, research infrastructures, and their associations",Fondazione IRCCS Policlinico San Matteo di Pavia
 "Research centres, research infrastructures, and their associations",Fundació Institut de Recerca en Energia de Catalunya (IREC)
@@ -1655,6 +1741,8 @@ Public or private research funding organisations and their associations,Deutsche
 "Research centres, research infrastructures, and their associations","Centro di Ricerca, Sviluppo e Studi Superiori in Sardegna - CRS4"
 "Research centres, research infrastructures, and their associations",CNRS
 "Research centres, research infrastructures, and their associations",Good Clinical Practice Alliance - Europe (GCPA)
+Romania,"Research-Development Institute for Plant Protection, Bucharest"
+Romania,Politehnica University Timisoara
 Romania,Spiru Haret University
 Romania,"""1 Decembrie 1918” University of Alba Iulia"
 Romania,Technical University of Cluj-Napoca
@@ -1684,6 +1772,7 @@ Slovakia,Academy of Performing Arts in Bratislava
 Slovakia,Biomedical Research Center of the Slovak Academy of Sciences
 Slovakia,Slovak Accreditation Agency for Higher Education
 Slovakia,Comenius University Bratislava
+Slovenia,University of Primorska
 Slovenia,Educational Research Institute
 Slovenia,University of Novo mesto
 Slovenia,Institute of Contemporary History
@@ -1692,6 +1781,9 @@ Slovenia,ARRS - Slovenian Research Agency
 Slovenia,University of Ljubljana
 Slovenia,Jožef Stefan Institute
 Slovenia,The Young Academy of Slovenia
+Spain,Institut de Recerca Sant Pau - IR Sant Pau
+Spain,Fundacion Jimenez Diaz Health Research Institute
+Spain,Universidad Miguel Hernández de Elche
 Spain,Fundació Institut de Recerca en Energia de Catalunya (IREC)
 Spain,BCAM - BASQUE CENTER FOR APPLIED MATHEMATICS
 Spain,Index Foundation
@@ -1781,6 +1873,7 @@ Spain,Biogipuzkoa Health Research Institute
 Spain,Universitat Rovira i Virgili
 Spain,Sociedad Cientifica Informatica de España (SCIE)
 Spain,Barcelona Institute for Global Health - ISGlobal
+Sweden,Jönköping University
 Sweden,Luleå University of Technology
 Sweden,Blekinge Institute of Technology
 Sweden,Uppsala University
@@ -1814,6 +1907,7 @@ Sweden,Knowledge Foundation / KK-stiftelsen
 Sweden,Linköping University
 Sweden,"Formas, The Swedish Research Council for the Environment, Agricultural Science and Spatial Planning"
 Sweden,Stockholm University
+Switzerland,Zurich University of the Arts
 Switzerland,University of Applied Sciences and Arts Northwestern Switzerland
 Switzerland,"Swiss Federal Institute for Forest, Snow and Landscape Research WSL"
 Switzerland,EPFL - Swiss Federal Institute of Technology in Lausanne
@@ -1836,6 +1930,7 @@ Tanzania,The Nelson Mandela African Institution of Science and Technology
 Timor-Leste,University of Dili (UNDIL)
 Tunisia,University of Carthage
 Tunisia,"Data Engineering and Semantics Research Unit, University of Sfax"
+Turkey,Turkish Academy of Sciences
 Turkey,YEDITEPE UNIVERSITY
 Turkey,TOBB University of Economics and Technology
 Turkey,Bilim Akademisi - Science Academy Turkey
@@ -1855,6 +1950,11 @@ Ukraine,NGO Growth Pole
 Ukraine,Kyiv National Economic University
 Ukraine,"National University ""Zaporizhzhia Polytechnic"""
 Ukraine,Lutsk National Technical University
+United Kingdom,The University of Manchester
+United Kingdom,John Innes Centre
+United Kingdom,University of Bristol
+United Kingdom,Society of Spanish Researchers in the United Kingdom (SRUK/CERU)
+United Kingdom,University of Suffolk
 United Kingdom,Brunel University London
 United Kingdom,"City, University of London"
 United Kingdom,University of Hertfordshire
@@ -1880,6 +1980,33 @@ United Kingdom,University of Strathclyde
 United Kingdom,Health Data Research UK
 United Kingdom,UK Research and Innovation (UKRI)
 United Kingdom,Swansea University
+Universities and their associations,Jönköping University
+Universities and their associations,Muséum national d'Histoire naturelle
+Universities and their associations,The University of Manchester
+Universities and their associations,University of Political and Economic European Studies C. Stere
+Universities and their associations,University of Liechtenstein
+Universities and their associations,European University for Well-Being
+Universities and their associations,University of Bristol
+Universities and their associations,Obuda University
+Universities and their associations,University of Orléans
+Universities and their associations,Latvia University of Life Sciences and Technologies
+Universities and their associations,European University Cyprus
+Universities and their associations,University Alliance Ruhr
+Universities and their associations,University of Education Heidelberg
+Universities and their associations,Universidad Miguel Hernández de Elche
+Universities and their associations,CY Cergy Paris Université
+Universities and their associations,Politehnica University Timisoara
+Universities and their associations,Vilnius Gediminas Technical University
+Universities and their associations,Tomas Bata University in Zlin
+Universities and their associations,University of Primorska
+Universities and their associations,National University of Kyiv Mohyla Academy
+Universities and their associations,University College Absalon
+Universities and their associations,Vidzeme University of Applied Sciences
+Universities and their associations,Jean Monnet University
+Universities and their associations,Alte University
+Universities and their associations,Sigmund Freud Private University
+Universities and their associations,Zurich University of the Arts
+Universities and their associations,University of Suffolk
 Universities and their associations,Brunel University London
 Universities and their associations,University of Caen Normandy
 Universities and their associations,University of Pannonia
@@ -1905,7 +2032,6 @@ Universities and their associations,Saxion University of Applied Sciences
 Universities and their associations,Roskilde University
 Universities and their associations,University of Monterrey
 Universities and their associations,St. Ignatius of Loyola College
-Universities and their associations,Sigmund Freud University SFU Berlin
 Universities and their associations,Vasyl Stefanyk Precarpathian National University
 Universities and their associations,Blekinge Institute of Technology
 Universities and their associations,"City, University of London"

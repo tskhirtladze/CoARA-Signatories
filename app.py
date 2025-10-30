@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import datetime
 from scraping_coara import fetch_signatories_data, save_to_csv, read_stored_date, file_name
 import os
+import plotly.graph_objects as go
+import numpy as np
 
 
 # Load the data
@@ -26,11 +28,34 @@ coara_df['Country'] = coara_df['Country'].replace('The Netherlands', 'Netherland
 # Filter the DataFrame to keep only valid countries
 df_filtered = coara_df[coara_df['Country'].isin(valid_countries)]
 
+keep_org_types = [
+    "Academies, learned societies, and their associations, and associations of researchers",
+    "National/regional authorities or agencies that implement some form of research assessment and their associations",
+    "Other relevant non-for-profit organisations involved with research assessment, and their associations",
+    "Research centres, research infrastructures, and their associations",
+    "Universities and their associations",
+    "Public or private research funding organisations and their associations"
+]
+
+short_org_type_map = {
+    "Academies, learned societies, and their associations, and associations of researchers": "Academies & Societies",
+    "National/regional authorities or agencies that implement some form of research assessment and their associations": "Assessment Authorities",
+    "Other relevant non-for-profit organisations involved with research assessment, and their associations": "Other NPOs",
+    "Research centres, research infrastructures, and their associations": "Research Centres",
+    "Universities and their associations": "Universities",
+    "Public or private research funding organisations and their associations": "Funding Orgs"
+}
+
+# Filter and create a new column with short labels
+df_clusters = coara_df[coara_df['Country'].isin(keep_org_types)].copy()
+df_clusters['ShortType'] = df_clusters['Country'].replace(short_org_type_map)
+
+
 # Group by country and count organizations
 country_counts = df_filtered.groupby(['Country']).size().reset_index(name='Counts')
 
 # Merge with world map
-merged = world.set_index('ADMIN').join(country_counts.set_index('Country'))
+merged = world.set_index('NAME').join(country_counts.set_index('Country'))
 
 st.set_page_config(page_title="CoARA Signatories")
 
@@ -82,16 +107,9 @@ if selected_nav == "📖 About" and coara_data == "Clear Selection":
 
     st.markdown("""
         ### About the Dashboard
-        This user-friendly dashboard offers up-to-date information on organizations that have signed the
-        **Agreement on Reforming Research Assessment (ARRA)**, allowing users to easily explore
-        signatories by country.
+        This dashboard was based on the old CoARA website. Since the CoARA website has been updated, a new project has been developed to match the new requirements.
+        To view the updated dashboard, follow this link: [New Dashboard](https://kfphcn9sd4noq5zjzqhgyr.streamlit.app/)
         
-        Voluntarily developed by independent researchers, the data visualization tool sources
-        information directly from the official website of the Coalition for **Advancing Research
-        Assessment (CoARA)** and is automatically updated.
-        
-        For more information on the responsible research assessment movement, visit the official
-        website: https://coara.eu/        
         """)
 
 elif selected_nav == "📊 Insights" and coara_data == "Clear Selection":
@@ -369,6 +387,62 @@ elif selected_nav == "📊 Insights" and coara_data == "Clear Selection":
     )
 
     st.plotly_chart(eu_widening_countries_fig)
+<<<<<<< HEAD
+=======
+
+    # Assuming you have this from above:
+    organization_counts = df_clusters.groupby(['Country']).size().reset_index(name='Counts')
+    organization_counts['CustomText'] = organization_counts.apply(
+        lambda row: f"Signatories: {row['Counts']}", axis=1
+    )
+
+
+    # Map to short names
+    df_clusters['ShortType'] = df_clusters['Country'].replace(short_org_type_map)
+
+    # Count occurrences
+    organization_counts = df_clusters.groupby(['ShortType', 'Country']).size().reset_index(name='Counts')
+
+    # Transform for visual balance
+    organization_counts['TransformedCounts'] = np.sqrt(organization_counts['Counts'])
+
+    # Custom text with original category and count
+    organization_counts['CustomText'] = (
+            organization_counts['Country'] + " — " + organization_counts['Counts'].astype(str)
+    )
+
+    organization_counts['TileLabel'] = organization_counts['ShortType'] + "<br>" + organization_counts['Counts'].astype(
+        str)
+
+    fig_treemap = go.Figure(go.Treemap(
+        labels=organization_counts['TileLabel'],  # short name + actual count
+        parents=[""] * len(organization_counts),
+        values=organization_counts['TransformedCounts'],  # sqrt used for sizing
+        hovertext=organization_counts['CustomText'],  # long text on hover
+        hoverinfo='text',
+        textinfo='label',  # only use label (which now includes actual count)
+        marker=dict(
+            colors=organization_counts['Counts'],  # keep original values for color
+            colorscale='Rainbow'
+        )
+    ))
+
+    fig_treemap.update_traces(textfont=dict(color='white'))
+
+    fig_treemap.update_layout(
+        margin=dict(t=50, l=25, r=25, b=25),
+        font=dict(size=18),
+        title_text='CoARA Signatories by Associations',
+        title_font=dict(size=24)
+    )
+
+    st.subheader("Treemap of Signatories by Organisation Type")
+    st.plotly_chart(fig_treemap, use_container_width=True)
+
+
+
+
+>>>>>>> e4fa475 (add: The new project url)
 
 
 
