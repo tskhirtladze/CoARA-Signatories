@@ -387,8 +387,7 @@ elif selected_nav == "📊 Insights" and coara_data == "Clear Selection":
     )
 
     st.plotly_chart(eu_widening_countries_fig)
-<<<<<<< HEAD
-=======
+
 
     # Assuming you have this from above:
     organization_counts = df_clusters.groupby(['Country']).size().reset_index(name='Counts')
@@ -440,9 +439,6 @@ elif selected_nav == "📊 Insights" and coara_data == "Clear Selection":
     st.plotly_chart(fig_treemap, use_container_width=True)
 
 
-
-
->>>>>>> e4fa475 (add: The new project url)
 
 
 
